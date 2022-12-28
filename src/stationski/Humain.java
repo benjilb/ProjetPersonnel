@@ -21,7 +21,7 @@ public class Humain {
 	}
 	
 	public void direBonjour() {
-		parler("Bonjour ! Je m'appelle " + nom + " et j'aime boire du " + boissonfav);
+		parler("Bonjour ! Je m'appelle " + nom);
 	}
 	
 	protected void gagnerArgent(int gain) {
@@ -40,5 +40,7 @@ public class Humain {
 		}
 		
 	}
+	
+	//public void manger(Restau)
 	
 }

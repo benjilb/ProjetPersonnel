@@ -4,9 +4,8 @@ public class Sportif extends Humain{
 	private String sport;
 	private int niveau;
 	public boolean forfait;
-	private int lvl = 4;
+																					
 	
-
 	public Sportif(String nom, int argent, String sport, int niveau, boolean forfait) {
 		super(nom,argent);
 		this.sport = sport;
