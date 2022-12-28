@@ -34,7 +34,7 @@ public class Station {
 		bourse = bourse - perte;
 	}
 	public void ajouterSportif(Sportif monsportif) {
-		if(monsportif.possessionforfait()) {
+		if(monsportif.isForfait()) {
 			sportif[nbSportif]= monsportif;
 			nbSportif++;
 		} else {
@@ -55,9 +55,8 @@ public class Station {
 	
 	public static void main(String[] args) {
 		Station station = new Station("Andorre",0,60,30);
-		Sportif paul = new Sportif("Paul",120,"ski", 2);
-		System.out.println(paul.getNom());
-		Sportif adele = new Sportif("Adele",80,"Snow", 1);
+		Sportif paul = new Sportif("Paul",120,"ski", 2,true);
+		Sportif adele = new Sportif("Adele",80,"Snow", 1,true);
 		station.ajouterSportif(paul);
 		station.ajouterSportif(adele);
 		station.afficherSportif();
